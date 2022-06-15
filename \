@@ -45,6 +45,10 @@ if __name__ == '__main__':
             result = taskInit(data).start()
 
             logger.info(f"[{args.task}] time: {monotonic() - start_time}")
+            
+            parse_inputs = [var for var in data_parse.sections()]
+
+            logger.info(f"[{args.task}] vars: {parse_inputs}")
             logger.info(f"[{args.task}] output -> {result}")
 
         else:
