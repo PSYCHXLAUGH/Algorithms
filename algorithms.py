@@ -2,7 +2,7 @@
 
 from loguru import logger 
 
-from time import monotonic, sleep
+from time import monotonic
 from os.path import exists
 from argparse import ArgumentParser
 from configparser import ConfigParser
